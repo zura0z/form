@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="examStyles.css">
+    <title>Form</title>
+</head>
+<body>
+
+
+    <div class="form">
+        <h2 class="pb-3">Register</h2>
+        <form id="myForm" action="" method="post">
+            <div class="row pb-3">
+                <div id="fnameDiv" class="col">
+                  <input id="fname" type="text" class="form-control" placeholder="First name">
+                </div>
+                <div id="lnameDiv" class="col">
+                  <input id="lname" type="text" class="form-control" placeholder="Last name">
+                </div>
+              </div>
+              <div id="emailDiv">
+                   <input class="form-control" type="email" name="email" id="email" placeholder="Email">
+              </div>
+    <div class="row py-3">
+        <div class="col">
+          <input id="pass1" type="password" class="form-control" placeholder="Password">
+        </div>
+        <div id="pass" class="col">
+          <input id="pass2" type="password" class="form-control" placeholder="Repeat Password">
+        </div>
+      </div>
+      <div class="row pb-3">
+        <div class="col">
+    <select class="form-control form-control-sm" name="country" id="country">
+        <option disabled="" selected="" value="">Select Your Country</option>
+        <option value="georgia">Georgia</option>
+        <option value="spain">Spain</option>
+        <option value="germany">Germany</option>
+        <option value="usa">USA</option>
+    </select>
+           </div>
+           <div class="col">
+    <select class="form-control form-control-sm" name="city" id="city">
+        <option disabled="" selected="" value="">Select Your City</option>
+        <option value="tbilisi">Tbilisi</option>
+        <option value="barcelona">Barcelona</option>
+        <option value="berlin">Berlin</option>
+        <option value="washington">Washington</option>
+    </select>
+        </div>
+        </div>
+    <div id="gender">
+        <h6 style="padding-left: 0;" class="custom-control custom-radio custom-control-inline">Gender:</h6>
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="customRadioInline1" name="gender" class="custom-control-input">
+            <label class="custom-control-label" for="customRadioInline1">Male</label>
+          </div>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="customRadioInline2" name="gender" class="custom-control-input">
+            <label class="custom-control-label" for="customRadioInline2">Female</label>
+          </div>
+    </div>
+    <input id="btn" class="btn btn-primary btn-block mt-2" type="submit" value="Submit">
+</form>
+        <span id="msg"></span>
+    </div>
+
+
+    <script src="examScript.js"></script>
+</body>
+</html>
